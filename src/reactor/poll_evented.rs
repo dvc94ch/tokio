@@ -19,7 +19,7 @@ use mio::event::Evented;
 use mio::Ready;
 use tokio_io::{AsyncRead, AsyncWrite};
 
-use reactor::{Handle, Registration};
+use crate::reactor::{Handle, Registration};
 
 #[deprecated(since = "0.1.2", note = "PollEvented2 instead")]
 #[doc(hidden)]

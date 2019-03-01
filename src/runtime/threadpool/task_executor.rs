@@ -66,9 +66,9 @@ where T: Future<Item = (), Error = ()> + Send + 'static,
     }
 }
 
-impl ::executor::Executor for TaskExecutor {
+impl crate::executor::Executor for TaskExecutor {
     fn spawn(&mut self, future: Box<Future<Item = (), Error = ()> + Send>)
-        -> Result<(), ::executor::SpawnError>
+        -> Result<(), crate::executor::SpawnError>
     {
         self.inner.spawn(future)
     }

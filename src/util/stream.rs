@@ -5,7 +5,7 @@ use futures::Stream;
 
 #[cfg(feature = "timer")]
 use std::time::Duration;
-pub use util::enumerate::Enumerate;
+pub use crate::util::enumerate::Enumerate;
 
 /// An extension trait for `Stream` that provides a variety of convenient
 /// combinator functions.

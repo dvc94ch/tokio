@@ -13,7 +13,7 @@
 #[cfg(feature = "io")]
 pub use tokio_io::{AsyncRead, AsyncWrite};
 
-pub use util::{FutureExt, StreamExt};
+pub use crate::util::{FutureExt, StreamExt};
 
 pub use std::io::{Read, Write};
 

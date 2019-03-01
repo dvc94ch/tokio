@@ -22,7 +22,7 @@ mod prelude {
 }
 
 mod connect_churn {
-    use prelude::*;
+    use crate::prelude::*;
 
     const NUM: usize = 300;
     const CONCURRENT: usize = 8;
@@ -153,7 +153,7 @@ mod connect_churn {
 }
 
 mod transfer {
-    use prelude::*;
+    use crate::prelude::*;
     use std::{cmp, mem};
 
     const MB: usize = 3 * 1024 * 1024;
@@ -242,7 +242,7 @@ mod transfer {
     }
 
     mod small_chunks {
-        use prelude::*;
+        use crate::prelude::*;
 
         #[bench]
         fn one_thread(b: &mut Bencher) {
@@ -251,7 +251,7 @@ mod transfer {
     }
 
     mod big_chunks {
-        use prelude::*;
+        use crate::prelude::*;
 
         #[bench]
         fn one_thread(b: &mut Bencher) {

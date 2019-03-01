@@ -1,5 +1,5 @@
-use executor::current_thread::CurrentThread;
-use runtime::current_thread::Runtime;
+use crate::executor::current_thread::CurrentThread;
+use crate::runtime::current_thread::Runtime;
 
 use tokio_reactor::Reactor;
 use tokio_timer::clock::Clock;

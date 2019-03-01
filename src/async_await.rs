@@ -1,3 +1,5 @@
+use crate::executor::spawn;
+use crate::runtime::run;
 use std::future::Future as StdFuture;
 
 async fn map_ok<T: StdFuture>(future: T) -> Result<(), ()> {
@@ -13,7 +15,7 @@ where
     use tokio_async_await::compat::backward;
     let future = backward::Compat::new(map_ok(future));
 
-    ::run(future);
+    run(future);
 }
 
 /// Like `tokio::spawn`, but takes an `async` block
@@ -24,5 +26,5 @@ where
     use tokio_async_await::compat::backward;
     let future = backward::Compat::new(map_ok(future));
 
-    ::spawn(future);
+    spawn(future);
 }

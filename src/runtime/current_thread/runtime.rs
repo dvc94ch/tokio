@@ -1,6 +1,6 @@
 use tokio_current_thread::{self as current_thread, CurrentThread};
 use tokio_current_thread::Handle as ExecutorHandle;
-use runtime::current_thread::Builder;
+use crate::runtime::current_thread::Builder;
 
 use tokio_reactor::{self, Reactor};
 use tokio_timer::clock::{self, Clock};

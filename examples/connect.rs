@@ -125,7 +125,7 @@ mod tcp {
     use tokio::prelude::*;
 
     use bytes::BytesMut;
-    use codec::Bytes;
+    use crate::codec::Bytes;
 
     use std::error::Error;
     use std::io;
@@ -181,7 +181,7 @@ mod udp {
     use tokio::net::{UdpFramed, UdpSocket};
     use tokio::prelude::*;
 
-    use codec::Bytes;
+    use crate::codec::Bytes;
 
     pub fn connect(
         &addr: &SocketAddr,

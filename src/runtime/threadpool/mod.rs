@@ -6,7 +6,7 @@ pub use self::builder::Builder;
 pub use self::shutdown::Shutdown;
 pub use self::task_executor::TaskExecutor;
 
-use reactor::{Handle, Reactor};
+use crate::reactor::{Handle, Reactor};
 
 use std::io;
 use std::sync::Mutex;

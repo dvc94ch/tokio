@@ -1,6 +1,6 @@
 use super::{Inner, Runtime};
 
-use reactor::Reactor;
+use crate::reactor::Reactor;
 
 use std::io;
 use std::sync::Mutex;

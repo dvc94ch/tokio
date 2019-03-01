@@ -81,7 +81,7 @@ impl<T: ?Sized> FutureExt for T where T: Future {}
 #[cfg(test)]
 mod test {
     use super::*;
-    use prelude::future;
+    use crate::prelude::future;
 
     #[cfg(feature = "timer")]
     #[test]

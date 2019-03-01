@@ -20,6 +20,7 @@ backed applications.
 """
 categories = ["asynchronous", "network-programming"]
 keywords = ["io", "async", "non-blocking", "futures"]
+edition = "2018"
 
 [workspace]
 

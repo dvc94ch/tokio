@@ -138,8 +138,8 @@ if_runtime! {
     pub mod executor;
     pub mod runtime;
 
-    pub use executor::spawn;
-    pub use runtime::run;
+    pub use crate::executor::spawn;
+    pub use crate::runtime::run;
 }
 
 // ===== Experimental async/await support =====
@@ -151,4 +151,4 @@ mod async_await;
 pub use async_await::{run_async, spawn_async};
 
 #[cfg(feature = "async-await-preview")]
-pub use tokio_async_await::await;
+pub use tokio_async_await::r#await;
